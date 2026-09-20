@@ -1,7 +1,7 @@
 \documentclass[10pt,letterpaper]{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage[left=0.5in,right=0.5in,top=0.45in,bottom=0.4in]{geometry}
+\usepackage[left=0.5in,right=0.5in,top=0.25in,bottom=0.15in]{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{titlesec}
@@ -12,6 +12,7 @@
 \raggedbottom
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
+\renewcommand{\baselinestretch}{0.95}
 \setlist[itemize]{leftmargin=*,topsep=1pt,parsep=0pt,itemsep=0pt}
 
 \titleformat{\section}{\normalsize\bfseries\uppercase}{}{0em}{}[\titlerule]
@@ -36,7 +37,7 @@
     \href{https://linkedin.com/in/bhavangupta-dev}{linkedin.com/in/bhavangupta-dev} \;|\;
     \href{https://github.com/bg12345}{github.com/bg12345}
 \end{center}
-\vspace{4pt}
+\vspace{1pt}
 
 % Professional Summary
 \section*{Professional Summary}
@@ -44,6 +45,15 @@ Software Engineer with experience building scalable backend systems using Python
 
 % Work Experience
 \section*{Work Experience}
+
+\textbf{Backend Developer} \hfill \textbf{Jun 2026 -- Present}\\
+\textit{BlackLight Studio Works Pvt. Ltd., Noida, Uttar Pradesh, India}
+\begin{itemize}
+    \item Built and maintained multiple \textbf{Go, Gin, and GORM} microservices with \textbf{Atlas}-managed schema migrations, including a multi-account \textbf{Google Ads API} management backend with gRPC connection pooling, \textbf{GAQL}-based reporting queries, and Play Store/iTunes metadata integration.
+    \item Designed a three-tier authentication system (API key, per-app-signed end-user JWT, admin JWT) for an in-app support ticketing platform, preventing cross-tenant token replay, and integrated \textbf{Cloud Vision SafeSearch} for attachment moderation.
+    \item Replaced \textbf{Firebase Dynamic Links} with a custom smart-link resolver supporting platform-aware deep linking and async click tracking, and built game backend services with dual guest/Google authentication, an A/B experiment framework, and \textbf{S3}-backed asset delivery.
+    \item Leveraged \textbf{AI-assisted development tools} (Claude, Codex) throughout the SDLC to accelerate implementation, code review, and debugging across services.
+\end{itemize}
 
 \textbf{Software Engineer} \hfill \textbf{Apr 2025 -- Apr 2026}\\
 \textit{Invsify Technologies Private Limited, New Delhi, India}
@@ -54,8 +64,6 @@ Software Engineer with experience building scalable backend systems using Python
     \item Built \textbf{FSM-based} user journey flows for multi-step financial workflows, improving state transitions, business rule validation, and backend maintainability.
     \item Improved SIP scheduling reliability through better \textbf{cron} execution, exception handling, and retry logic, reducing transaction failures by \textbf{10--12\%}.
     \item Engineered the \textbf{eKYC onboarding pipeline} using \textbf{Go microservices}, reducing customer onboarding turnaround time by \textbf{25--30\%}.
-    \item Implemented high-performance \textbf{fuzzy search} across asset classes by optimizing query pipelines and backend search logic.
-    \item Developed an automated \textbf{invoice generation microservice} that reduced manual effort by \textbf{70\%} and improved reporting accuracy.
 \end{itemize}
 
 \textbf{Junior Software Engineer} \hfill \textbf{May 2024 -- Apr 2025}\\
@@ -67,26 +75,20 @@ Software Engineer with experience building scalable backend systems using Python
     \item Implemented segment activation workflows in \textbf{Django} for \textbf{Mutual Funds, Currency, and Equity Derivatives} with validation rules, status tracking, and API integrations.
 \end{itemize}
 
-\textbf{Machine Learning Intern} \hfill \textbf{Jun 2022 -- Nov 2022}\\
-\textit{BeGig Pvt. Ltd., Gurugram, India}
-\begin{itemize}
-    \item Developed a content-based \textbf{recommendation system} using \textbf{machine learning} to match freelancers with projects based on skill similarity and profile relevance.
-    \item Built a real-time chat backend using \textbf{Flask} and \textbf{WebSocket}, increasing platform user engagement by \textbf{30\%}.
-\end{itemize}
-
 % Skills
 \section*{Technical Skills}
 \begin{itemize}
     \item \textbf{Languages:} Python, Golang (Go)
-    \item \textbf{Frameworks:} Django, Flask, Gin, GORM, REST APIs, Microservices
-    \item \textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis
-    \item \textbf{Tools:} AWS S3, AWS EC2, AWS Lambda, Git, Docker, Linux, WebSocket
-    \item \textbf{Domain:} eKYC Systems, Payment Gateway (Razorpay), Trading Platforms, Account Aggregator, Agile, CI/CD, FSM
+    \item \textbf{Frameworks:} Django, Flask, FastAPI, Gin, GORM
+    \item \textbf{Databases:} PostgreSQL, MySQL, Redis
+    \item \textbf{Cloud \& Tools:} AWS (S3, EC2, Lambda), GCP, Git, Docker, Linux, Atlas
+    \item \textbf{Domain \& Concepts:} eKYC Systems, Payment Gateway (Razorpay), Trading Platforms, Account Aggregator, REST APIs, Microservices, FSM, WebSocket, Agile, CI/CD
+    \item \textbf{AI Tools:} Claude, Codex
 \end{itemize}
 
 % Projects
 \section*{Projects}
-\textbf{Climate Trends Visualization} | \href{https://github.com/bg12345/climate-visualization}{GitHub}: Interactive Golang and JavaScript app for climate data visualization with dynamic filtering and charts, containerized using Docker and deployed on AWS EC2.\\
+\textbf{gorm-dbobjects} | \href{https://github.com/bg12345/gorm-dbobjects}{GitHub}: Go library built on GORM enabling triggers, views, and stored procedures to be defined as type-checked Go code, auto-generating SQL for Postgres, MySQL, SQL Server, and SQLite.\\
 \textbf{OCR System} | \href{https://github.com/bg12345/OCR}{GitHub}: Python OCR system using OpenCV and Tesseract for scanned document text extraction.
 
 % Education

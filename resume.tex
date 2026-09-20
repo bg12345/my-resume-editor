@@ -1,0 +1,100 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.5in,right=0.5in,top=0.45in,bottom=0.4in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{tabularx}
+
+\pagestyle{empty}
+\raggedbottom
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=*,topsep=1pt,parsep=0pt,itemsep=0pt}
+
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{4pt}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Large \textbf{Bhavan Gupta}}\\[1pt]
+    {\normalsize Software Engineer}\\[2pt]
+    \small
+    \href{mailto:bhavangupta@gmail.com}{bhavangupta@gmail.com} \;|\;
+    9971639333 \;|\;
+    New Delhi \;|\;
+    \href{https://linkedin.com/in/bhavangupta-dev}{linkedin.com/in/bhavangupta-dev} \;|\;
+    \href{https://github.com/bg12345}{github.com/bg12345}
+\end{center}
+\vspace{4pt}
+
+% Professional Summary
+\section*{Professional Summary}
+Software Engineer with experience building scalable backend systems using Python as a primary language and Go for high-performance services. Skilled in REST APIs, microservices, eKYC and fintech workflows, payment integrations, and database optimization using Django, Flask, Gin, and GORM. Strong in backend development, Docker-based deployment, and reliable transaction and onboarding systems.
+
+% Work Experience
+\section*{Work Experience}
+
+\textbf{Software Engineer} \hfill \textbf{Apr 2025 -- Apr 2026}\\
+\textit{Invsify Technologies Private Limited, New Delhi, India}
+\begin{itemize}
+    \item Developed and optimized \textbf{Golang microservices} for fixed deposit and stock transaction workflows, improving API response time by \textbf{20--25\%} through \textbf{SQL tuning}, indexing, and backend optimization.
+    \item Designed \textbf{RESTful APIs} for SIP workflows using \textbf{Go, Gin, and GORM}, including \textbf{Razorpay} integration for mandate creation, payment initiation, and automated transaction processing.
+    \item Containerized microservices using \textbf{Docker} to standardize deployments, simplify service packaging, and improve consistency across development and production environments.
+    \item Built \textbf{FSM-based} user journey flows for multi-step financial workflows, improving state transitions, business rule validation, and backend maintainability.
+    \item Improved SIP scheduling reliability through better \textbf{cron} execution, exception handling, and retry logic, reducing transaction failures by \textbf{10--12\%}.
+    \item Engineered the \textbf{eKYC onboarding pipeline} using \textbf{Go microservices}, reducing customer onboarding turnaround time by \textbf{25--30\%}.
+    \item Implemented high-performance \textbf{fuzzy search} across asset classes by optimizing query pipelines and backend search logic.
+    \item Developed an automated \textbf{invoice generation microservice} that reduced manual effort by \textbf{70\%} and improved reporting accuracy.
+\end{itemize}
+
+\textbf{Junior Software Engineer} \hfill \textbf{May 2024 -- Apr 2025}\\
+\textit{Almondz Global Securities Ltd., New Delhi, India}
+\begin{itemize}
+    \item Engineered the end-to-end \textbf{Django-based eKYC backend workflow} covering \textbf{PAN validation}, document parsing, biometric verification, and exchange submission APIs, improving account opening success by \textbf{$\sim$40\%}.
+    \item Designed and maintained \textbf{Django-driven} customer onboarding logic aligned with \textbf{SEBI, NSE, and BSE compliance} requirements as a primary backend contributor for eKYC modules.
+    \item Developed \textbf{Django} back-office modules for personal detail updates, bank account management, account closure requests, and related internal operations.
+    \item Implemented segment activation workflows in \textbf{Django} for \textbf{Mutual Funds, Currency, and Equity Derivatives} with validation rules, status tracking, and API integrations.
+\end{itemize}
+
+\textbf{Machine Learning Intern} \hfill \textbf{Jun 2022 -- Nov 2022}\\
+\textit{BeGig Pvt. Ltd., Gurugram, India}
+\begin{itemize}
+    \item Developed a content-based \textbf{recommendation system} using \textbf{machine learning} to match freelancers with projects based on skill similarity and profile relevance.
+    \item Built a real-time chat backend using \textbf{Flask} and \textbf{WebSocket}, increasing platform user engagement by \textbf{30\%}.
+\end{itemize}
+
+% Skills
+\section*{Technical Skills}
+\begin{itemize}
+    \item \textbf{Languages:} Python, Golang (Go)
+    \item \textbf{Frameworks:} Django, Flask, Gin, GORM, REST APIs, Microservices
+    \item \textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis
+    \item \textbf{Tools:} AWS S3, AWS EC2, AWS Lambda, Git, Docker, Linux, WebSocket
+    \item \textbf{Domain:} eKYC Systems, Payment Gateway (Razorpay), Trading Platforms, Account Aggregator, Agile, CI/CD, FSM
+\end{itemize}
+
+% Projects
+\section*{Projects}
+\textbf{Climate Trends Visualization} | \href{https://github.com/bg12345/climate-visualization}{GitHub}: Interactive Golang and JavaScript app for climate data visualization with dynamic filtering and charts, containerized using Docker and deployed on AWS EC2.\\
+\textbf{OCR System} | \href{https://github.com/bg12345/OCR}{GitHub}: Python OCR system using OpenCV and Tesseract for scanned document text extraction.
+
+% Education
+\section*{Education}
+\textbf{B.Sc (Hons) Mathematics}, Motilal Nehru College, Delhi University \hfill \textbf{2019 -- 2022}
+
+% Certificates
+\section*{Certifications}
+\textbf{Python Programming Expert}, Edureka \hfill \textbf{Mar 2023}
+
+\end{document}

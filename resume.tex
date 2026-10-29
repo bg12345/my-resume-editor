@@ -41,7 +41,7 @@
 
 % Professional Summary
 \section*{Professional Summary}
-Software Engineer with experience building scalable backend systems using Python as a primary language and Go for high-performance services. Skilled in REST APIs, microservices, eKYC and fintech workflows, payment integrations, and database optimization using Django, Flask, Gin, and GORM. Strong in backend development, Docker-based deployment, and reliable transaction and onboarding systems.
+Software Engineer with experience building scalable backend systems using Python (Django, Django REST Framework) as a primary stack, plus Go for high-performance services. Skilled in REST APIs, microservices, eKYC and fintech workflows, payment integrations, and PostgreSQL/SQL optimization using Django ORM, Flask, FastAPI, Gin, and GORM. Strong in Docker-based deployment and reliable transaction systems.
 
 % Work Experience
 \section*{Work Experience}
@@ -49,21 +49,22 @@ Software Engineer with experience building scalable backend systems using Python
 \textbf{Backend Developer} \hfill \textbf{Jun 2026 -- Present}\\
 \textit{BlackLight Studio Works Pvt. Ltd., Noida, Uttar Pradesh, India}
 \begin{itemize}
-    \item Built and maintained multiple \textbf{Go, Gin, and GORM} microservices with \textbf{Atlas}-managed schema migrations, including a multi-account \textbf{Google Ads API} management backend with gRPC connection pooling, \textbf{GAQL}-based reporting queries, and Play Store/iTunes metadata integration.
-    \item Designed a three-tier authentication system (API key, per-app-signed end-user JWT, admin JWT) for an in-app support ticketing platform, preventing cross-tenant token replay, and integrated \textbf{Cloud Vision SafeSearch} for attachment moderation.
+    \item Built and maintained multiple \textbf{Python, Django, and Django REST Framework} microservices with \textbf{Django ORM} schema migrations, including a multi-account \textbf{Google Ads API} management backend with gRPC connection pooling, \textbf{GAQL}-based reporting queries, and Play Store/iTunes metadata integration.
+    \item Designed a three-tier authentication system (API key, per-app-signed end-user JWT, admin JWT) for an in-app support ticketing platform, preventing cross-tenant token replay, and integrated \textbf{Cloud Vision SafeSearch} for moderation.
     \item Replaced \textbf{Firebase Dynamic Links} with a custom smart-link resolver supporting platform-aware deep linking and async click tracking, and built game backend services with dual guest/Google authentication, an A/B experiment framework, and \textbf{S3}-backed asset delivery.
-    \item Leveraged \textbf{AI-assisted development tools} (Claude, Codex) throughout the SDLC to accelerate implementation, code review, and debugging across services.
+    \item Leveraged \textbf{AI-assisted development tools} (Claude, Codex) across SDLC for coding, code review, and debugging.
 \end{itemize}
 
 \textbf{Software Engineer} \hfill \textbf{Apr 2025 -- Apr 2026}\\
 \textit{Invsify Technologies Private Limited, New Delhi, India}
 \begin{itemize}
-    \item Developed and optimized \textbf{Golang microservices} for fixed deposit and stock transaction workflows, improving API response time by \textbf{20--25\%} through \textbf{SQL tuning}, indexing, and backend optimization.
-    \item Designed \textbf{RESTful APIs} for SIP workflows using \textbf{Go, Gin, and GORM}, including \textbf{Razorpay} integration for mandate creation, payment initiation, and automated transaction processing.
-    \item Containerized microservices using \textbf{Docker} to standardize deployments, simplify service packaging, and improve consistency across development and production environments.
-    \item Built \textbf{FSM-based} user journey flows for multi-step financial workflows, improving state transitions, business rule validation, and backend maintainability.
-    \item Improved SIP scheduling reliability through better \textbf{cron} execution, exception handling, and retry logic, reducing transaction failures by \textbf{10--12\%}.
-    \item Engineered the \textbf{eKYC onboarding pipeline} using \textbf{Go microservices}, reducing customer onboarding turnaround time by \textbf{25--30\%}.
+    \item Developed and optimized \textbf{Python Django microservices} for fixed deposit and stock transaction workflows, improving API response time by \textbf{20--25\%} through \textbf{PostgreSQL/SQL tuning}, indexing, and \textbf{Django ORM} query optimization.
+    \item Designed \textbf{RESTful APIs} for SIP workflows using \textbf{Python, Django, and Django REST Framework}, including \textbf{Razorpay} integration for mandates, payment initiation, and automated transaction processing.
+    \item Containerized microservices using \textbf{Docker} to standardize deployments and improve consistency across environments.
+    \item Built \textbf{FSM-based} user journey flows for multi-step financial flows, improving state transitions and rule validation.
+    \item Improved SIP scheduling reliability through better \textbf{cron} execution, exception handling, and retries, reducing transaction failures by \textbf{10--12\%}.
+    \item Built \textbf{Celery} + \textbf{Redis} background tasks for asynchronous SIP transaction processing and payment status updates, with retries, backoff, and idempotent design.
+    \item Engineered the \textbf{eKYC onboarding pipeline} using \textbf{Python Django microservices}, reducing customer onboarding turnaround time by \textbf{25--30\%}.
 \end{itemize}
 
 \textbf{Junior Software Engineer} \hfill \textbf{May 2024 -- Apr 2025}\\
@@ -79,7 +80,7 @@ Software Engineer with experience building scalable backend systems using Python
 \section*{Technical Skills}
 \begin{itemize}
     \item \textbf{Languages:} Python, Golang (Go)
-    \item \textbf{Frameworks:} Django, Flask, FastAPI, Gin, GORM
+    \item \textbf{Frameworks:} Django, Django REST Framework, Celery, Flask, FastAPI, Gin, GORM
     \item \textbf{Databases:} PostgreSQL, MySQL, Redis
     \item \textbf{Cloud \& Tools:} AWS (S3, EC2, Lambda), GCP, Git, Docker, Linux, Atlas
     \item \textbf{Domain \& Concepts:} eKYC Systems, Payment Gateway (Razorpay), Trading Platforms, Account Aggregator, REST APIs, Microservices, FSM, WebSocket, Agile, CI/CD
